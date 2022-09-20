@@ -6,15 +6,16 @@ body {
 }
 
 section {
-    padding: 3rem 0 3rem 0; 
+    padding: 7rem 0 7rem 0; 
 }
 
 .section-title {
     text-align: center;
-    padding: 4rem 0;
+    padding: 0 0 3rem 0;
 }
 
-.section-title p {
+.section-title p,
+.description p {
     font-size: 20px;
     font-style: italic;
     margin-top: 0.5rem;
@@ -24,11 +25,12 @@ section {
 .subtitle {
     font-family: 'Montserrat', sans-serif;
     color: #292928;
+    margin-bottom: 0;
 }
 
 .title {
     font-size: 36px;
-    margin-bottom: 0;
+    
 }
 
 .subtitle {
@@ -136,3 +138,19 @@ section {
 }
 
 /* Services */
+
+
+
+.portfolio {
+    background: #f0efed;
+}
+
+.portfolio img {
+    height: 350px;
+    width: 100%;
+}
+
+.description {
+    background: #fff;
+    padding: 0.4rem;
+}
