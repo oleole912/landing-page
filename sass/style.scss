@@ -2,7 +2,57 @@ body {
     font-family: 'Alegreya', serif;
     font-size: 16px;
     margin: 0;
+    color: #5c5c5b;
 }
+
+section {
+    padding: 3rem 0 3rem 0; 
+}
+
+.section-title {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.section-title p {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.title,
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #292928;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    font-size: 20px;
+}
+
+.row {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.row i {
+    font-size: 36px;
+    color: #face1e;
+    border: 4px solid #face1e;
+    width: 80px;
+    height: 80px;
+    line-height: 70px;
+    border-radius: 50px;
+}
+
+
+
+/* Header */
 
 .navigation {
     display: flex;
@@ -85,3 +135,4 @@ body {
     letter-spacing: 0.1rem;
 }
 
+/* Services */
