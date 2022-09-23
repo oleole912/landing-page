@@ -196,6 +196,7 @@ section {
     position: relative;
     display: flex;
 }
+
 .footer-icons {
     font-size: 0;
     position: absolute;
@@ -206,13 +207,13 @@ section {
 
 input[type=checkbox]{
     display: none;
-   } 
+} 
 
-   .hamburger {
-    display: none;
-    font-size: 24px;
-    user-select: none;
-   }
+.hamburger {
+display: none;
+font-size: 24px;
+user-select: none;
+}
 
 @media only screen and (max-width: 767px) {
 
@@ -225,15 +226,15 @@ input[type=checkbox]{
         text-align: right;
         padding-right: 20px;
         line-height: 1.8;
-       }
+    }
 
-       input[type=checkbox]:checked ~ .menu{
-        display: block;
-       }
+    input[type=checkbox]:checked ~ .menu {
+    display: block;
+    }
 
-       .hamburger {
-        display: block;
-       }
+    .hamburger {
+    display: block;
+    }
 
     .hidden {
       display: none;
@@ -249,7 +250,7 @@ input[type=checkbox]{
 
     .navigation-list li {
         padding: 2px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .footer-elements {
