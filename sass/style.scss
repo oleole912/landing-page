@@ -8,12 +8,12 @@ body {
 }
 
 section {
-    padding: 7rem 0 7rem 0; 
+    padding: 7rem 0; 
 }
 
 .section-title {
     text-align: center;
-    padding: 0 0 3rem 0;
+    padding-bottom: 3rem;
 }
 
 .section-title p,
@@ -44,19 +44,22 @@ section {
     text-align: center;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 /* Header */
 
 .navigation {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.navigation-list ul {
+.menu {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    margin: 1rem 1rem 1rem 15rem;
     padding: 0;
 }
 
@@ -159,11 +162,16 @@ section {
 .description {
     background: #fff;
     padding: 0.4rem;
+    box-shadow: 0 -10px 0 #fff;
 }
 
 /* Footer */
 
-.footer i {
+.footer {
+    padding: 20px 0; 
+}
+
+.footer-icons i {
     font-size: 20px;
     color: #fff;
     background: #292928;
@@ -172,6 +180,7 @@ section {
     border-radius: 40px;
     line-height: 40px;
     transition: transform 1s;
+    margin: 0 5px;
 }
 
 .footer i:hover {
@@ -179,50 +188,92 @@ section {
     transform: scale(1.2);
 }
 
-.footer-icons {
-    display: flex;
-    padding-left: 3rem;
-}
-
-.footer-icons a {
-    
-    margin-left: 10px;
-}
-
 .footer p {
     text-align: left;
 }
 
-@media only screen and (max-width: 700px) {
+.footer-elements {
+    position: relative;
+    display: flex;
+}
+.footer-icons {
+    font-size: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+input[type=checkbox]{
+    display: none;
+   } 
+
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+
+@media only screen and (max-width: 767px) {
+
+    .menu { 
+        display: none;
+        position: absolute;
+        background-color: transparent;
+        right: 0;
+        left: 0;
+        text-align: right;
+        padding-right: 20px;
+        line-height: 1.8;
+       }
+
+       input[type=checkbox]:checked ~ .menu{
+        display: block;
+       }
+
+       .hamburger {
+        display: block;
+       }
+
     .hidden {
       display: none;
     }
+
+    .page-subtitle {
+        font-size: 0;
+    }
+
     .navigation-list ul {
         margin: 0.5rem;
-        
     }
+
     .navigation-list li {
         padding: 2px;
-        font-size: 10px;
+        font-size: 14px;
     }
-    .footer-row {
-        display: flex;
-        flex-direction: column;
+
+    .footer-elements {
+        display: block;
     }
+
     .footer p {
         text-align: center;
     }
+
     .footer-icons {
         display: flex;
         justify-content: center;
         padding-left: 0;
     }
+
     .element {
         margin-bottom: 30px;
     }
+
     .portfolio img {
         width: 80%;
     }
+
     .description {
         width: 80%;
         margin: 0 auto;

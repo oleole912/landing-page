@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing-page</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Alegreya&family=Carattere&family=Montserrat:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="vendor/bootstrap-grid.css" />
-    <link rel="stylesheet" href="css/style.css" />
+      rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="splash">
@@ -22,29 +21,31 @@
           <div class="navigation-logo">
             <p>Golden</p>
           </div>
-          <div class="navigation-list">
-            <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">SERVICES</a></li>
-              <li><a href="#">PORTFOLIO</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-          </div>
+          <ul class="navigation-list">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+              <li><a href="#" class="uppercase">home</a></li>
+              <li><a href="#" class="uppercase">services</a></li>
+              <li><a href="#" class="uppercase">portfolio</a></li>
+              <li><a href="#" class="uppercase">about</a></li>
+              <li><a href="#" class="uppercase">contact</a></li>
+            </div>
+          </ul>
         </nav>
       </div>
       <div class="splash-inner">
         <div class="container">
           <h1 class="page-title">Welcome To Our Studio!</h1>
-          <h1 class="page-subtitle">IT'S NICE TO MEET YOU</h1>
-          <a href="#" class="btn-main">TELL ME MORE</a>
+          <h1 class="page-subtitle uppercase">it's nice to meet you</h1>
+          <a href="#" class="uppercase">tell me more</a>
         </div>
       </div>
     </header>
     <section class="services">
       <div class="container">
         <div class="section-title">
-          <h2 class="title">SERVICES</h2>
+          <h2 class="title uppercase">services</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
         </div>
         <div class="row">
@@ -81,54 +82,54 @@
     <section class="portfolio">
         <div class="container">
             <div class="section-title">
-                <h2 class="title">OUR PORTFOLIO</h2>
+                <h2 class="title uppercase">our portfolio</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
             </div>
             <div class="portfolio-elements">
                 <div class="row">
                     <div class="col-sm-6 col-md-4 element">
-                       <img src="https://i.postimg.cc/LsqT4rFV/pexels-cup-of-couple-7657379.jpg">
+                       <img src="https://i.postimg.cc/LsqT4rFV/pexels-cup-of-couple-7657379.jpg" alt="stationery">
                        <div class="description">
-                            <h4 class="subtitle">Incididunt</h4>
+                            <h3 class="subtitle">Incididunt</h3>
                             <p>Volutpat blandit</p>
-                       </div> 
+                       </div>
                     </div>
                     <div class="col-sm-6 col-md-4">
-                        <img src="https://i.postimg.cc/zBKFKKBb/pexels-monstera-6373477.jpg" alt="">
+                        <img src="https://i.postimg.cc/zBKFKKBb/pexels-monstera-6373477.jpg" alt="stationery">
                         <div class="description">
-                             <h4 class="subtitle">Vestibulum</h4>
+                             <h3 class="subtitle">Vestibulum</h3>
                              <p>Aliquam id diam</p>
-                        </div> 
+                        </div>
                      </div>
                      <div class="col-sm-6 hidden col-md-4">
-                        <img src="https://i.postimg.cc/mggjJPdJ/pexels-bruno-cervera-4257118.jpg">
+                        <img src="https://i.postimg.cc/mggjJPdJ/pexels-bruno-cervera-4257118.jpg" alt="stationery">
                         <div class="description">
-                             <h4 class="subtitle">Faucibus</h4>
+                             <h3 class="subtitle">Faucibus</h3>
                              <p>Eget egestas purus</p>
-                        </div> 
+                        </div>
                      </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6 hidden col-md-4">
-                       <img src="https://i.postimg.cc/8Cqb7t1g/pexels-cup-of-couple-7657380.jpg">
+                       <img src="https://i.postimg.cc/8Cqb7t1g/pexels-cup-of-couple-7657380.jpg" alt="stationery">
                        <div class="description">
-                            <h4 class="subtitle">Labore et Dolore</h4>
+                            <h3 class="subtitle">Labore et Dolore</h3>
                             <p>Accumsan in nisl</p>
-                       </div> 
+                       </div>
                     </div>
                     <div class="col-sm-6 col-md-4 element">
-                        <img src="https://i.postimg.cc/0yXns9FQ/pexels-eva-bronzini-6568927.jpg">
+                        <img src="https://i.postimg.cc/0yXns9FQ/pexels-eva-bronzini-6568927.jpg" alt="stationery">
                         <div class="description">
-                             <h4 class="subtitle">Venenatis</h4>
+                             <h3 class="subtitle">Venenatis</h3>
                              <p>Magna fringilla urna</p>
-                        </div> 
+                        </div>
                      </div>
                      <div class="col-sm-6 col-md-4">
-                        <img src="https://i.postimg.cc/NFt74F9N/pexels-karolina-grabowska-5412501.jpg">
+                        <img src="https://i.postimg.cc/NFt74F9N/pexels-karolina-grabowska-5412501.jpg" alt="stationery">
                         <div class="description">
-                             <h4 class="subtitle">Consectetur Adipiscing</h4>
+                             <h3 class="subtitle">Consectetur</h3>
                              <p>Viverra aliquet eget</p>
-                        </div> 
+                        </div>
                      </div>
                 </div>
             </div>
@@ -136,17 +137,17 @@
     </section>
     <footer class="footer">
         <div class="container">
-            <div class="row footer-row">
-                <div class="col-sm-12 col-md-4">
-                    <p>© Copyright 2022. GOLDEN Ltd</p>
-                </div>
-                <div class="col-sm-12 col-md-8 footer-icons">
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-                </div>
+          <div class="footer-elements">
+            <div class="footer-text">
+              <p>© Copyright 2022. GOLDEN Ltd</p>
             </div>
+            <div class="footer-icons">
+              <a href="#"><i class="fa-brands fa-twitter"></i>twitter</a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i>facebook</a>
+              <a href="#"><i class="fa-brands fa-pinterest-p"></i>pinterest</a>
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i>google-plus</a>
+            </div>
+          </div>
         </div>
     </footer>
   </body>
